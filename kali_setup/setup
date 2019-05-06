@@ -1,0 +1,26 @@
+Set folder share and download methodology cherry tree file
+
+Edit bashrc file to inlcude to start webserver on port 80 (make sure apache2 is not running)
+  alias webs='python -m SimpleHTTPServer 80'
+
+Add keyboard shortcut to take screenshots of an area and spawn terminal 
+
+Turn power settings off (automatic suspend)
+
+Install additional tools:
+  seclists
+  terminator
+  
+Firefox add ons:
+  foxy proxy
+  ublock origin
+  User-Agent Switcher
+ 
+tmux settings
+    
+terminal preferences
+    150x45
+    
+cherry tree preferences
+  monospace background: none
+
