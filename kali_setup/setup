@@ -11,6 +11,7 @@ Install additional tools:
   seclists
   terminator
   gobuster
+  libssl-dev
   
 Firefox add ons:
   foxy proxy
