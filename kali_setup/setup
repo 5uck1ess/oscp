@@ -10,6 +10,7 @@ Turn power settings off (automatic suspend)
 Install additional tools:
   seclists
   terminator
+  gobuster
   
 Firefox add ons:
   foxy proxy
@@ -17,6 +18,9 @@ Firefox add ons:
   User-Agent Switcher
  
 tmux settings
+
+terminator settings
+  
     
 terminal preferences
     150x45
