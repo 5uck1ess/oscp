@@ -1,0 +1,2 @@
+ln -sf /usr/local/sbin/mount-shared-folders /root/Desktop/mount-shared-folders
+gsettings set org.gnome.nautilus.preferences executable-text-activation 'ask'
