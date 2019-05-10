@@ -12,6 +12,8 @@ Install additional tools:
   terminator
   gobuster
   libssl-dev
+  filezilla
+  proftpd
   
 Firefox add ons:
   foxy proxy
