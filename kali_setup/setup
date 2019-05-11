@@ -14,6 +14,7 @@ Install additional tools:
   libssl-dev
   filezilla
   proftpd
+  ftp
   
 Firefox add ons:
   foxy proxy
