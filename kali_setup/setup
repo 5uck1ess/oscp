@@ -16,6 +16,7 @@ Install additional tools:
   proftpd
   ftp
   gcc-multilib
+  pyftpdlib
   
 Firefox add ons:
   foxy proxy
