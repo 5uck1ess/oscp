@@ -4,6 +4,7 @@ import socket
 HOST = ""
 PORT = 5555
 
+#https://github.com/onecloudemoji/BOF-Template/blob/master/template.py - Original
 
 #step 1, find the overflow length 
 #buffer = "A"*1100
