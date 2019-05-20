@@ -1,3 +1,5 @@
+Msfdb run - start db and run msfconsole
+
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
 Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
