@@ -1,5 +1,7 @@
 Msfdb run - start db and run msfconsole
 
+Burp url encode - ctrl u
+
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
 Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
