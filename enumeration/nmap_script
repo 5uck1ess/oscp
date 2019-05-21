@@ -1,3 +1,9 @@
+Unicord scan first then nmap those ports
+
+unicornscan -i tap0 -I -mT $IP:a
+
+
+
 Scan 65535 ports and output to nmap_full file in xml, grepable, and default
   nmap -p- -A -oA nmap_full IP
   
