@@ -1,3 +1,4 @@
+WHEN MOVING FILES IN FTP, set to binary mode to in order to not mess up a payload or nc.exe 
 Msfdb run - start db and run msfconsole
 
 Burp url encode - ctrl u
