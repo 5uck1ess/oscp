@@ -1,6 +1,6 @@
 Unicord scan first then nmap those ports
 
-unicornscan -i tap0 -I -mT $IP:a
+unicornscan -i tun0 -I -mT $IP:a
 
 
 
