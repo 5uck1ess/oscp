@@ -1,5 +1,8 @@
 WHEN MOVING FILES IN FTP, set to binary mode to in order to not mess up a payload or nc.exe 
+
 Msfdb run - start db and run msfconsole
+
+You can use this: $(!!) to recompute (not re-use) the output of the last command.
 
 Burp url encode - ctrl u
 
