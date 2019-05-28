@@ -1,4 +1,4 @@
-WHEN MOVING FILES IN FTP, set to binary mode to in order to not mess up a payload or nc.exe 
+Copy the PNG info from an image to fake an image
 
 Msfdb run - start db and run msfconsole
 
@@ -10,8 +10,6 @@ Burp url encode - ctrl u
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
 Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
-
-Priv_Esc - linux privchecker.py GOOGLE
 
 Guess passwords first admin, password, name of the box, name of the software etc
 
