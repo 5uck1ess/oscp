@@ -1,3 +1,5 @@
+Staged payload, use msf multi handler
+
 Copy the PNG info from an image to fake an image
 
 Msfdb run - start db and run msfconsole
