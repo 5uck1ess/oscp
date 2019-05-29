@@ -13,3 +13,9 @@ Make shell autocompleteable
   in Target
   stty rows #
   stty cols #
+
+
+Better Shell 
+python -c 'import pty; pty.spawn("/bin/bash")' 
+  Try this too
+python3 -c 'import pty; pty.spawn("/bin/bash")'
