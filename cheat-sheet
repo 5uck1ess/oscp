@@ -8,7 +8,8 @@ You can use this: $(!!) to recompute (not re-use) the output of the last command
   Example: cp `!!` .
 
 Burp url encode - ctrl u
-
+  always encode url when passing in burp
+  
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
 Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
