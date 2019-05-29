@@ -1,3 +1,5 @@
+use binwalk to analyze images 
+
 Staged payload, use msf multi handler
 
 Copy the PNG info from an image to fake an image
