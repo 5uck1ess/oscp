@@ -1,0 +1,10 @@
+Make shell autocompleteable 
+
+Look at these numbers
+stty -a
+
+stty raw -echo 
+
+in Target
+stty rows #
+stty cols #
