@@ -2,3 +2,4 @@ gobuster -u IP -w /usr/share/seclists/Discovery/Web-Content/common.txt -t 80 -a 
 
 gobuster -u IP -w /usr/share/seclists/Discovery/Web-Content/big.txt -t 80 -a Linux
 
+-k skip certificate validation
