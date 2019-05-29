@@ -11,8 +11,8 @@ Make shell autocompleteable
   fg
 
   in Target
-  stty rows #
-  stty cols #
+  stty rows # cols #
+
 
 
 Better Shell 
