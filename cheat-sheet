@@ -12,9 +12,10 @@ Burp url encode - ctrl u
   
 Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the list of hosts and IPs
 
-Better Shell python -c 'import pty; pty.spawn("/bin/bash")' 
+Better Shell 
+python -c 'import pty; pty.spawn("/bin/bash")' 
   Try this too
-  python3 -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 Guess passwords first admin, password, name of the box, name of the software etc
 
