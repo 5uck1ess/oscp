@@ -1,16 +1,15 @@
 Make shell autocompleteable 
+  Background nc shell 
+  ctrl z
 
-Background nc shell 
-ctrl z
+  Foreground nc shell
+  fg
 
-Foreground nc shell
-fg
+  Look at these numbers
+  stty -a
 
-Look at these numbers
-stty -a
+  stty raw -echo 
 
-stty raw -echo 
-
-in Target
-stty rows #
-stty cols #
+  in Target
+  stty rows #
+  stty cols #
