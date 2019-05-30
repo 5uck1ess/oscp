@@ -19,11 +19,10 @@ c:\windows\sysnative 64-bit
 Nishang, powershell reverse shell 
 Empire post exploit/privesc
 
-powershell-suite
-
 meterpreter session (use 64-bit kind if 64 bit machine since exploits may not work sometimes)
 migrate 1788 is explorer session (find out with ps command)
 Turns into 64 bit process
 
 Check if running 64 bit process
 [Environment]::Is64BitProcess
+
