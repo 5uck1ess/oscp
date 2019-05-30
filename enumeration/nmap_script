@@ -1,3 +1,5 @@
+nmap -sC -sV -oA nmap/initial IP
+
 Unicord scan first then nmap those ports
 
 unicornscan -i tun0 -I -mT $IP:a
