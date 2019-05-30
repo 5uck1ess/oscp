@@ -15,3 +15,6 @@ Nishang, powershell reverse shell
 Empire post exploit/privesc
 
 powershell-suite
+
+meterpreter session
+migrate 1788 is explorer session
