@@ -1,5 +1,7 @@
 #step 1, find the overflow length 
 how many 'Z' it takes to crash the program
+Alternative way 
+!mona findmsp
 
 #step 2, find the length to hit EIP, generate length with the following
 /usr/bin/msf-pattern_create
