@@ -6,20 +6,12 @@ Zone-Transfer- host -l megacorpone.com ns2.megacorpone.com - sometimes dumps the
 
 Guess passwords first admin, password, name of the box, name of the software etc
 
-Always use full path to execute something 
-
-SNIFF SMB version ngrep -i -d tap0 's.?a.?m.?b.?a.*[[:digit:]]' & smbclient -L [IP] 
-
 Linux memory 99 percent writeable /dev/shm
 
 ftp>!/bin/bash
 echo $SHELL
 export SHELL="/bin/bash"
 echo $SHELL
-
-
-Script to check every SMB vulnerability 
-for vul in $(find / -name smb*vuln*.nse | cut -d"/" -f 6); do nmap -v -p 139,445 --script=$vul -iL smb_server_all.txt -oN smb_vulns_$vul.txt; done 
 
 Show hidden directories in CMD: attrib -s -h -r /s /d *.*
 
