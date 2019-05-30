@@ -1,3 +1,5 @@
+Include invoke expression (can be an example from the script) on the bottom to run it as soon as the whole thing is invoked
+
 Sherlock.ps1 script to check for privesc paths
 
 powershell paths
