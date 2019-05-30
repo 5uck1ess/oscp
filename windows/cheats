@@ -19,3 +19,6 @@ powershell-suite
 meterpreter session
 migrate 1788 is explorer session (find out with ps command)
 Turns into 64 bit process
+
+Check if running 64 bit process
+[Environment]::Is64BitProcess
