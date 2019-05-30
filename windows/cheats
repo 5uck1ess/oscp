@@ -1,4 +1,7 @@
-do sysinfo first
+do systeminfo first
+
+Script execution bypass, runs the command
+echo iex expression | powershell -noprofile -
 
 Include invoke expression (can be an example from the script) on the bottom to run it as soon as the whole thing is invoked
 
