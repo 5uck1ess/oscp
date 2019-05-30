@@ -1,3 +1,5 @@
+Highlight all and then change the request method to post becuase of more characters to worry about filtering
+
 Burp url encode - ctrl u
   always encode url when passing in burp
   ctrl shift u to decode
