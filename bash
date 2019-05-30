@@ -1,3 +1,8 @@
+searchsploit SOMETHING
+
+to copy into working directory
+searchsploit -m EXPLOIT
+
 Test blind command injection
 on target box
 ping IP
