@@ -1,3 +1,5 @@
+sudo -l
+
 Only in tty shell 
 
 or privchecker
