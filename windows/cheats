@@ -1,3 +1,5 @@
+do sysinfo first
+
 Include invoke expression (can be an example from the script) on the bottom to run it as soon as the whole thing is invoked
 
 download into memory using powershell can be invoked after (needs to be hosted on python httpserver)
