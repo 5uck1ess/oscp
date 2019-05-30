@@ -1,0 +1,10 @@
+Sherlock.ps1 script to check for privesc paths
+
+powershell paths
+
+c:\windows\system32 32-bit
+c:\windows\sysWOW64 32-bit
+c:\windows\systemnative 64-bit
+
+Nishang, powershell reverse shell 
+Empire post exploit/privesc
