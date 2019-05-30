@@ -1,0 +1,3 @@
+Burp url encode - ctrl u
+  always encode url when passing in burp
+  ctrl shift u to decode
