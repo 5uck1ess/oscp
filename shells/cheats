@@ -10,12 +10,12 @@ Make shell autocompleteable
   Foreground nc shell
   fg
 
-  in Target
+  in Target (used for vim or more a file)
   stty rows # cols #
   
   OR
   
-  export term=screen
+  export term=xterm-256color
 
 
 
