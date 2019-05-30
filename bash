@@ -22,6 +22,9 @@ grep -R version_number . | awk -F: '{print $1}' | uniq
 
 less filename 
 
+Can create multiple subsequent directories
+mkdir -p one/two
+
 Script to check every SMB vulnerability 
 for vul in $(find / -name smb*vuln*.nse | cut -d"/" -f 6); do nmap -v -p 139,445 --script=$vul -iL smb_server_all.txt -oN smb_vulns_$vul.txt; done 
 
