@@ -17,4 +17,4 @@ Empire post exploit/privesc
 powershell-suite
 
 meterpreter session
-migrate 1788 is explorer session
+migrate 1788 is explorer session (find out with ps command)
