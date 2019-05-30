@@ -12,6 +12,10 @@ Make shell autocompleteable
 
   in Target
   stty rows # cols #
+  
+  OR
+  
+  export term=screen
 
 
 
