@@ -1,3 +1,7 @@
+Install vmware tools
+
+linux headers
+
 Set folder share and download methodology cherry tree file
 
 Edit bashrc file to inlcude to start webserver on port 80 (make sure apache2 is not running)
