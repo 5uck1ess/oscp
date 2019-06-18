@@ -10,6 +10,7 @@ Edit bashrc file to inlcude to start webserver on port 80 (make sure apache2 is 
 Add keyboard shortcut to take screenshots of an area and spawn terminal 
 
 Turn power settings off (automatic suspend)
+Turn auto hide side bar feature off
 
 Install additional tools:
   seclists
@@ -34,6 +35,9 @@ Firefox add ons:
 tmux settings
 
 terminator settings
+  infitine scrollback
+  font color
+  
 
 git clone discover
     
