@@ -1,6 +1,9 @@
 run in screen
 nmap -sV -sC -oA nmap/initial IP && nmap -p- -A -oA nmap/full IP && nmap -sU -T4 -oA nmap/udp IP
 
+https://github.com/21y4d/nmapAutomator
+Better nmap script
+
 nmap -sC -sV -oA nmap/initial IP
 
 Unicord scan first then nmap those ports
