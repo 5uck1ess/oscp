@@ -19,10 +19,6 @@ buf += "\n"
 #send the message
 s.send(buf)
 
-#print what we sent
-
-print "Sent: {0}".format(buf)
-
 #receive some data from socket
 data = s.recv(1024)
 
