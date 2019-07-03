@@ -24,5 +24,4 @@ s.send("VALUE" + buf)
 #receive some data from socket
 data = s.recv(1024)
 
-#print out what received
-print "Received: {0}".format(data)
+s.close()
