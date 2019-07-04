@@ -14,7 +14,7 @@ s.connect((RHOST,RPORT))
 
 buf = ""
 buf += "PATTERN"
-buf += "\n"
+buf += "\r\n"
 
 #send the message
 s.send("VALUE " + buf)
