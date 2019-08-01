@@ -1,3 +1,6 @@
+nslookup file list
+for i in $( cat targets );do nslookup $i;done
+
 searchsploit SOMETHING
 
 shellshock
