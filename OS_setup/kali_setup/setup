@@ -13,6 +13,7 @@ Turn power settings off (automatic suspend)
 Turn auto hide side bar feature off
 
 Install additional tools:
+  ncat
   seclists
   terminator
   gobuster
